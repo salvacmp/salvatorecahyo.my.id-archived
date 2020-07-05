@@ -22,31 +22,31 @@ app.get("/", (req, res) => {
 
 const port = process.env.PORT || 1337;
 app.listen(port, () => {
-        console.log('Listening at http://localhost:1337');
-    })
-    /*
-    app.listen(8000, () => {
-        console.log('Server is running at port 8000');
-    });
-    app.listen(0, function() {
-        console.log('Listening on port ' + app.address().port);
-    });
-    const server = app.listen(0, () => {
-        console.log('Listening on port:', server.address().port);
-    });
-    const { createServer } = require('http')
+    console.log("Listening at http://localhost:1337");
+});
+/*
+app.listen(8000, () => {
+    console.log('Server is running at port 8000');
+});
+app.listen(0, function() {
+    console.log('Listening on port ' + app.address().port);
+});
+const server = app.listen(0, () => {
+    console.log('Listening on port:', server.address().port);
+});
+const { createServer } = require('http')
 
-    const server = createServer(() => {})
+const server = createServer(() => {})
 
-    server.listen(3000)
-    const http = require('http');
-    const hostname = '127.0.0.1';
-    const port = 3000;
+server.listen(3000)
+const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
 
-    const server = http.get((req, res) => {
-        res.render('index');
-    });
+const server = http.get((req, res) => {
+    res.render('index');
+});
 
-    server.listen(port, () => {
-        console.log(`Server running at http://localhost:${port}/`);
-    });*/
+server.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});*/
