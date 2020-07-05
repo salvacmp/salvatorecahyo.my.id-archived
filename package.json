@@ -1,0 +1,22 @@
+{
+    "name": "plg1",
+    "version": "1.0.0",
+    "description": "Personal Landing Page",
+    "main": "index.js",
+    "author": "Salvatore Cahyo",
+    "license": "MIT",
+    "scripts": {
+        "prod": "node app.js",
+        "dev": "nodemon app.js",
+        "dev2": "browser-sync start --server --index ./views/index.html --ss ./public/ --files ./views/index.html"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1"
+    },
+    "devDependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "browser-sync": "2.26.7"
+    }
+}
