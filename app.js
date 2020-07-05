@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-
+/* eslint no-console: ["error", { allow: ["log"] }] */
 const port = process.env.PORT || 1337;
 app.listen(port, () => {
     console.log("Listening at http://localhost:1337");
